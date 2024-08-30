@@ -91,3 +91,16 @@ ul {
 .input-error:focus{
     border-color: #e21a43;
 }
+
+footer {
+    display: flex;
+    background-color: #021017;
+    height: 60px;
+    width: 100vw;
+    color: #474747;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+
+}
