@@ -1,23 +1,33 @@
-const tarefas = document.querySelector('ul')//Atribuí as ul em tarefa
+function adicionar() {
+    const tarefas = document.querySelector('ul')
+    const registro = document.querySelector('#registro')
 
-const novaTimeline = document.createElement('li')//Atribuí as li em novaTimeline
+    const novaTimeline = document.createElement('li')
+    novaTimeline.classList.add('timeline')
 
-novaTimeline.classList.add('timeline')//Adicionei a mesma classe das outras nesse novo elemento
+    const tarefa = document.createElement('span')
+    tarefa.textContent = registro.value
 
-const tarefa = document.createElement('span')//Aribuí um span em tarefa
+    const dataHora = document.createElement('span')
+    const dataAtual = new Date()
+    const options = {
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric'
+    }
+    dataHora.textContent = dataAtual.toLocaleDateString('pt-BR', options)
 
-tarefa.textContent = ''//Atribuí ao "conteúdo do texto" do tarefa o texto TAREFA
+    novaTimeline.appendChild(tarefa)
+    novaTimeline.appendChild(dataHora)
+    tarefas.appendChild(novaTimeline)
 
-//novaTimeline.append(tarefa)//Adicionei o tarefa dentro de novaTimeline
-//o metodo append adiciona após o ultimo filho ou ultimo adicionado
-//novaTimeline.prepend(tarefa)//Adicona antes do primeiro filho
-
-//O metodo mais simples mas só aceita um argumentos de uma só vez
-
-//tarefas.append(novaTimeline)//colocar essa formatacao
-
-/*
------------- Desafio pessoal:
-1 - Recuperar o que for digitado na caixa de dialogo
-2 - acrecentar o que foi digitado abaixo dos outros itens
-*/
+    registro.value = ''
+}
+document.querySelector('#registro').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault()
+        adicionar()
+    }
+})

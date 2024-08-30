@@ -5,10 +5,10 @@
 body {
     
     width: 100vw;
-    height: 100vh;
+    height: auto;
 
 
-    background: #121412;
+    background: #01080E;
     color: white;
     display: flex;
     justify-content: center;
@@ -34,20 +34,28 @@ input {
     height: 50px;
     width: 400px;
     border-radius: 5px;
-    background-color: rgb(50, 43, 65);
+    background-color: #01080E;
     padding-left: 10px;
     font-size: 16px;
     color: #fff;
     box-shadow: #121412;
+    border: 1px solid #2BDEFD;
+    
 
+}
+input::placeholder{
+    color: #2BDEFD;
 }
 
 .button {
-    background-color: rgb(131, 78, 255);
+    background-color: #2bfdbe;
     width: 100px;
-    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
     font-size: 15px;
-    color: white;
+    color: #01080e;
+    border: none;
+    border-radius: 5px;
     
 }
 
@@ -58,12 +66,21 @@ ul {
 .timeline {
     display: flex;
     list-style: none;
-    background-color: rgb(50, 43, 65);
-    height: 50px;
+    background-color: #021017;
+    min-height: 50px;
+    height: auto;
     margin-top: 15px;
     border-radius: 5px;
-    padding-left: 10px;
     align-items: center;
+    justify-content: space-between;
+    border: 1px solid #011522;
+}
+
+.timeline span {
+    margin: 10px 0;
+    text-align: justify;
+    padding: 10px 20px;
+
 }
 
 .hide {
