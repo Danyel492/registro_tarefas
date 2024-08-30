@@ -1,20 +1,20 @@
-const convidados = document.querySelector('ul')//Atribuí as ul em CONVIDADO
+const tarefas = document.querySelector('ul')//Atribuí as ul em tarefa
 
-const novoConvidado = document.createElement('li')//Atribuí as li em NOVOcONVIDADO
+const novaTimeline = document.createElement('li')//Atribuí as li em novaTimeline
 
-novoConvidado.classList.add('guest')//Adicionei a mesma classe das outras nesse novo elemento
+novaTimeline.classList.add('timeline')//Adicionei a mesma classe das outras nesse novo elemento
 
-const nomeConvidado = document.createElement('span')//Aribuí um span em NOMEcONVIDADO
+const tarefa = document.createElement('span')//Aribuí um span em tarefa
 
-nomeConvidado.textContent = ''//Atribuí ao "conteúdo do texto" do NOMEcONVIDADO o texto DIEGO
+tarefa.textContent = ''//Atribuí ao "conteúdo do texto" do tarefa o texto TAREFA
 
-//novoConvidado.append(nomeConvidado)//Adicionei o NOMEcONVIDADO dentro de NOVOcONVIDADO
+//novaTimeline.append(tarefa)//Adicionei o tarefa dentro de novaTimeline
 //o metodo append adiciona após o ultimo filho ou ultimo adicionado
-//novoConvidado.prepend(nomeConvidado)//Adicona antes do primeiro filho
+//novaTimeline.prepend(tarefa)//Adicona antes do primeiro filho
 
 //O metodo mais simples mas só aceita um argumentos de uma só vez
 
-//convidados.append(novoConvidado)//colocar essa formatacao
+//tarefas.append(novaTimeline)//colocar essa formatacao
 
 /*
 ------------ Desafio pessoal:

@@ -36,6 +36,9 @@ input {
     border-radius: 5px;
     background-color: rgb(50, 43, 65);
     padding-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: #121412;
 
 }
 
@@ -45,13 +48,14 @@ input {
     border-radius: 5px;
     font-size: 15px;
     color: white;
+    
 }
 
 ul {
     margin-top: 30px;
 }
 
-.guest {
+.timeline {
     display: flex;
     list-style: none;
     background-color: rgb(50, 43, 65);

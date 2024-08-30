@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aulas de Javascript</title>
+    <title>App Registro de Tarefas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
     <main>
-        <h1>Convidadeos</h1>
+        <h1>Registro de tarefa</h1>
             <form>
                 <input
                 type="text"
-                placeholder="Digite o nome"
-                id="name"
+                placeholder="Digite a tarefa realizada: "
+                id="registro"
                 />
                 <button onclick="adicionar()" type="button" id="btn" class="button">Adicionar</button>
             </form>
 
             <ul>
-                <li id="guest-1" class="guest">
-                    <span>Danyel</span>
+                <li id="reg1" class="timeline">
+                    <span>Registro 1</span>
                 </li>
-                <li id="guest-2" class="guest">
-                    <span>Augusto</span>
+                <li id="reg2" class="timeline">
+                    <span>Registro 2</span>
                 </li>
             </ul>
     </main>
