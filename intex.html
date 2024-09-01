@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Registro de Tarefas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+
 </head>
+
 <body>
     <main>
         <h1>Registro de tarefas</h1>
-            <form>
-                <input
-                type="text"
-                placeholder="Digite a tarefa realizada: "
-                id="registro"
-                />
-                <button onclick="adicionar()" type="button" id="btn" class="button">Add</button>
-            </form>
+        <h1 id="h1Print">Relatório diário</h1>
+        <form>
+            <input type="text" placeholder="Digite a tarefa realizada: " id="registro" />
+            <button onclick="adicionar()" type="button" id="btn" class="button">Adicionar</button>
+        </form>
 
-            <ul>
+        <ul>
 
-            </ul>
+        </ul>
     </main>
 
-    <footer>Desenvolvido por: Danyel Augusto A. Silva</footer>
+    <footer>
+        <span id="footerMain">Desenvolvido por: Danyel Augusto A. Silva -</span>
+        <span> - v 0.0.1</span>
+        <span id="footerPrint">Relatório automático diário de tarefas realizadas. Aplicação desenvolvida por: Danyel Augusto A. Silva</span>
+    </footer>
+    
 
 
     <script src="scripts.js"></script>
 </body>
+
 </html>

@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    
+
     width: 100vw;
     height: auto;
 
@@ -17,12 +18,17 @@ body {
     font-family: "Roboto", sans-serif;
 
 }
+
 main {
     max-width: 550px;
 }
 
-h1, h2{
+h1,
+h2 {
     margin: 32px 0
+}
+#h1Print {
+    display: none;
 }
 
 form {
@@ -30,6 +36,7 @@ form {
     display: flex;
     gap: 12px;
 }
+
 input {
     height: 50px;
     width: 400px;
@@ -40,23 +47,31 @@ input {
     color: #fff;
     box-shadow: #121412;
     border: 1px solid #2BDEFD;
-    
+
 
 }
-input::placeholder{
+
+input::placeholder {
     color: #2BDEFD;
 }
 
 .button {
     background-color: #2bfdbe;
-    width: 100px;
+    width: 150px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 15px;
     color: #01080e;
     border: none;
     border-radius: 5px;
-    
+    cursor: pointer;
+    border: 1px solid #2bfdbe;
+}
+
+.button:hover {
+    background-color: #fff;
+    transition: 0.2s;
+
 }
 
 ul {
@@ -88,7 +103,7 @@ ul {
 }
 
 .input-error,
-.input-error:focus{
+.input-error:focus {
     border-color: #e21a43;
 }
 
@@ -102,5 +117,10 @@ footer {
     justify-content: center;
     position: absolute;
     bottom: 0;
+    font-size: smaller;
 
+}
+
+#footerPrint {
+    display: none;
 }
