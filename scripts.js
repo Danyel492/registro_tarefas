@@ -22,6 +22,7 @@ function adicionar() {
             minute: 'numeric'
         }
         dataHora.textContent = dataAtual.toLocaleDateString('pt-BR', options)
+        dataHora.style.width= '95px', maxWidth= '95px', minWidth= '95px'
 
         novaTimeline.appendChild(tarefa)
         novaTimeline.appendChild(dataHora)
