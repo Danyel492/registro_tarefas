@@ -7,13 +7,11 @@ Todos os dias precisava descrever cada atividade executada durante o dia, bem co
 Essa aplicação facilita a entrada de dados fornecendo uma ordem de tarefas executadas juntamento com os horarios de cada ponto na timeline.
 Ao final do dia é gerado um relatorio completa para ser enviado por email.
 --
-Ultima atualização: 02/09/2024
-*Alteração da font
-*Conserto do footer durante rolagem
-*Espaçamento interno do campo de digitação
-*Ajuste padrão da data e hora
+Ultimas atualizações:
+*Linckando Footer para página pessoal
 
 Implementações futuras:
+**Responsividade URGENTE
 *Registro em um bando de dados local
 *icone de apagar registro
 *Icone de edição de registro
